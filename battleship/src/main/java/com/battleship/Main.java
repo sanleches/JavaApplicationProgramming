@@ -11,7 +11,7 @@ import javafx.stage.Stage;
 import com.battleship.ui.MainStage;
 
 /**
- * JavaFX App Main
+ * JavaFX App
  */
 public class Main extends Application {
 
