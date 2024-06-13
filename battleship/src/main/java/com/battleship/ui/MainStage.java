@@ -47,8 +47,8 @@ public class MainStage {
             }
         }
 
-        // Add ship sprites and hit/miss sprites
-        String imagePath = "file:C:/ALGONQUIN WORKSPACES/LVL4 JAVA APP PROGRAMING/Assignment12/src/main/resources/images/";
+        String imagePath = "file:battleship/src/main/java/com/battleship/ui/images/";
+
         addImageToGrid(battlefieldGrid, imagePath + "bow_east.png", 0, 0);
         addImageToGrid(battlefieldGrid, imagePath + "bow_north.png", 0, 1);
         addImageToGrid(battlefieldGrid, imagePath + "bow_south.png", 0, 2);
@@ -57,7 +57,7 @@ public class MainStage {
         addImageToGrid(battlefieldGrid, imagePath + "midhull_vert.png", 1, 1);
         addImageToGrid(battlefieldGrid, imagePath + "hit.png", 1, 2);
         addImageToGrid(battlefieldGrid, imagePath + "miss.png", 1, 3);
-
+        
         // Username Box
         Label usernameLabel = new Label("Username: **");
         usernameLabel.setStyle("-fx-background-color: #3B6491; -fx-text-fill: white; -fx-font-size: 16px; -fx-padding: 20px;"); // Increase padding and font size

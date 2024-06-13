@@ -6,7 +6,7 @@ import javafx.application.Application;
 import javafx.stage.Stage;
 
 /**
- * JavaFX App tu jfa es wonita
+ * JavaFX App 
  */
 public class Main extends Application {
 
