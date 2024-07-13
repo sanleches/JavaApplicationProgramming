@@ -1,20 +1,22 @@
 package com.battleship.ui;
 
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.GridPane;
-import javafx.scene.control.Label;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
-import javafx.geometry.Pos;
-import javafx.geometry.Insets;
 import javafx.scene.paint.Color;
 
 public class MainStage {
-    private Scene scene;
+    private final Scene scene;
+    String imagePath = "file:battleship/src/main/java/com/battleship/ui/images/";
+
 
     public MainStage() {
         BorderPane root = new BorderPane();
@@ -23,7 +25,7 @@ public class MainStage {
         scene = new Scene(root, 1920, 1080);  // Set initial size to 1920x1080
 
         // Title Banner
-        Image logoImage = new Image("file:C:/ALGONQUIN WORKSPACES/LVL4 JAVA APP PROGRAMING/Assignment12/src/main/resources/images/logo.png");
+        Image logoImage = new Image(imagePath + "logo.png");
         ImageView titleBanner = new ImageView(logoImage);
         titleBanner.setFitWidth(625);  // Adjust width to be approximately as wide as the grid
         titleBanner.setFitHeight(250); // Ensure height does not exceed 250 pixels
@@ -47,7 +49,6 @@ public class MainStage {
             }
         }
 
-        String imagePath = "file:battleship/src/main/java/com/battleship/ui/images/";
 
         addImageToGrid(battlefieldGrid, imagePath + "bow_east.png", 0, 0);
         addImageToGrid(battlefieldGrid, imagePath + "bow_north.png", 0, 1);
